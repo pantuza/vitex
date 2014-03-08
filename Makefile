@@ -4,14 +4,27 @@
 
 
 filename := cv.tex
-output := vitex.pdf
+TEX := xelatex
+fontfile := fontin.zip
+fontin := /usr/share/fonts/fontin
 
 
 cv: cv.tex
 	@echo -e "Compiling CV..."
-	$(TEX) $(filename) $(output)
+	$(TEX) $(filename)
+	evince cv.pdf
+
+
+font: $(fontfile)
+	@echo -e "# Installing Fontin on system\n"
+	sudo mkdir -p $(fontin)
+	sudo cp $(fontfile) $(fontin)
+	sudo unzip $(fontin)/$(fontfile) -d $(fontin)
+	sudo rm $(fontin)/$(fontfile)
+	@echo -e "# Updating system font cache\n"
+	sudo fc-cache -fv
 
 
 clean:
-	rm *.tmp *.out *.pdf
+	rm *.log *.aux *.out *.pdf
 
