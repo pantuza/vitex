@@ -21,7 +21,7 @@ font: $(fontfile)
 	sudo cp $(fontfile) $(fontin)
 	sudo unzip $(fontin)/$(fontfile) -d $(fontin)
 	sudo rm $(fontin)/$(fontfile)
-	@echo -e "# Updating system font cache\n"
+	@echo -e "\n# Updating system font cache\n"
 	sudo fc-cache -fv
 
 
