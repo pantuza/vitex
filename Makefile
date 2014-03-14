@@ -9,7 +9,7 @@ fontfile := fontin.zip
 fontin := /usr/share/fonts/fontin
 
 
-cv: cv.tex
+latex: cv.tex
 	@echo -e "Compiling CV..."
 	$(TEX) $(filename)
 	evince cv.pdf
