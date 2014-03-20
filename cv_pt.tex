@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This template was modified by Gustavo Pantuza as in
+% http://github.com/pantuza/vitex
+%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Gustavo \textsc{Pantuza}}\bigskip\par} % Your name
+
+\section{Dados Pessoais}
+
+\begin{tabular}{rl}
+\textsc{Data de Nascimento:} & 12 de Outubro de 1989 \\
+\textsc{Localidade:} & Belo Horizonte - MG, Brasil \\
+\textsc{Telefone:} & +55 31 8367 2657\\
+\textsc{email:} & \href{mailto:gustavopantuza@gmail.com}{gustavopantuza@gmail.com}
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+
+\textsc{Current} & \emph{ 2 \textsuperscript{nd} year Researcher in Distributed 
+Systems and Software Defined Networking (SDN)
+at Federal University of Minas Gerais (UFMG)}, \\ 
+& \footnotesize{Proposing and evaluating SDN controllers modules and 
+networking distributed systems in C, C++ and Python.} \\
+\multicolumn{2}{c}{} \\
+
+\textsc{Sep 2012 - Jun 2013} & \emph{Software engineer and System 
+Administrator at Latitude 14} \\ 
+& \footnotesize{Managed a development team building a Web Application using 
+Scrum and TDD methodologies. 
+Proposed the architecture and software design.
+Took care of the system deploy, the development environment and all 
+services that application depends on.} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Aug 2010-Sep 2012} & Software Engineer at \textsc{Studio Sol
+Comunicação Digital}  \\
+& \footnotesize{Built Mobile APIs, Web and Real Time Applications 
+with Python/Django, MySQL, Javascript, html/css and PHP. 
+Managed a distributed database and systems 
+like Lucene Solr, Nginx, MongoDB, Redis, uWSGI. }\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2009 - Aug 2010} & Software Test Analyst/Engineer
+at \textsc{Totvs S.A} \\
+& \footnotesize{Designed test processes and softwares using a mix 
+of iterative/incremental and spiral methodologies looking at
+configuration management, build automation and documentation.}
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{December} 2014 & Master of Computer Science in 
+\textsc{Distributed Systems},  \textbf{Federal University of}
+\\ & \textbf{Minas Gerais}, UFMG \\
+% & 110/110 \small\emph{First Class Honours} | Major: Quantitative Finance\\
+& Thesis: ``Aspects, Architecture and Implementation of a Distributed
+Controller \\ & in Software Defined Networking'' 
+| \small Advisor: Prof. Luiz \textsc{F M Vieira} \\ 
+% &\normalsize \textsc{Gpa}: 8.0/9.0\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{December} 2012& Undergraduate Degree in 
+\textsc{}\textsc{Computer Science},
+% \\&110/110 \small\emph{Commerce Specialization}, 
+\normalsize\textbf{ University Center of Belo} 
+\\ & \textbf{Horizonte}, UNIBH \\
+& Conclusion Project: ``Monitoring and Aged Care System Based on 
+Distributed
+\\ & Systems and Microcontrollers'' 
+| \small Advisor: Euzébio \textsc{Souza} \\
+% &\normalsize \textsc{Gpa}: 7.5/9.0 \hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{December} 2007 &Technical computation for industries, 
+\textbf{Juscelino Kubitschek Technical}
+\\ & \textbf{School}, Ipatinga \\
+% & \textsc{Gpa}: 8.0/9.0 \hyperlink{grds_usc}{\hfill| \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{July} 2007 & English language, \textbf{Uptime Consultants}
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Communities and Contributions}
+
+\begin{tabular}{rl}
+\textsc{OpenSUSE}  & Member of OpenSUSE community \\
+\textsc{Python Brazil}  & Member of Python Brazil Association \\
+\textsc{Mininet}  & Contributed adding Dynamic Network environment \\
+\textsc{FsF} & Member of Free Software Foundation \\
+\textsc{Área31 Hackerspace} & Founding Member of the Hackerspace \\
+\textsc{Pox} & Added a Graph representation of the network with 
+management purpose \\
+\textsc{Personal Projects} & Personal Free Software
+\href{http://github.com/pantuza}{projects} \\
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+
+%\begin{tabular}{rl}
+%\textsc{English:} & Fluent\\
+
+%\textsc{Italian:} & Mothertongue\\
+
+%\textsc{French:} & Basic Knowledge\\
+%\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{Computer Skills}
+
+\begin{tabular}{rl}
+Languages: & Python, C, C++, bash, javascript, PHP, 
+Java, html/css, {\fb \LaTeX} \\
+Databases: & MySQL, PostgreSQL, MongoDB, Redis \\
+Operating System: & OpenSUSE, CentOS, Ubuntu, Fedora, Arch Linux \\
+Services: & nginx, Apache, Tornado, memcached, Lucene Solr, 
+git, squid, bind9, uWSGI, Cron \\
+Networking tools: & nmap, tcpdump, iptraf, iperf \\
+Development tools: & vim, gdb, valgrind, ipdb, nose, pylint, POSIX tools \\
+\end{tabular}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+
+\section{Interests and Activities}
+visit my site \href{http://pantuza.com}{http://pantuza.com} and check 
+out my code and my projects, as well as my living in
+social networks and my interests.
+
+%----------------------------------------------------------------------------------------
+\end{document}
