@@ -3,16 +3,27 @@
 #
 
 
-filename := cv.tex
+EN_FILE := cv_en
+PT_FILE := cv_pt
+
 TEX := xelatex
+
 fontfile := fontin.zip
 fontin := /usr/share/fonts/fontin
 
 
-latex: cv.tex
-	@echo -e "Compiling CV..."
-	$(TEX) $(filename)
-	evince cv.pdf
+latex: en
+	
+en: $(EN_FILE).tex
+	@echo -e "Compiling English CV..."
+	$(TEX) $(EN_FILE).tex
+	evince $(EN_FILE).pdf
+
+
+pt: $(PT_FILE).tex
+	@echo -e "Compiling Portuguese (BR) CV..."
+	$(TEX) $(PT_FILE).tex
+	evince $(PT_FILE).pdf
 
 
 font: $(fontfile)
