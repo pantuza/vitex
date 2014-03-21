@@ -22,6 +22,9 @@ $> make en
 
 # Portuguese (Brazil) version of the CV
 $> make pt
+
+# Compile the CV in all languages available
+$> make all # or just: $> make
 ```
 
 
