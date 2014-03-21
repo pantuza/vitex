@@ -48,6 +48,9 @@
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
 
 \usepackage{titlesec} % Used to customize the \section command
+
+\usepackage{longtable} % Used for footnotes inside tables 
+
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
@@ -185,7 +188,7 @@ Distributed
 \textsc{Área31 Hackerspace} & Founding Member of the
 \href{http://area31.net.br}{Hackerspace} \\
 \textsc{Pox} & Added a Graph representation of the network with 
-management purpose \\
+\\ & management purpose \\
 \textsc{Personal Projects} & Personal Free Software
 \href{http://github.com/pantuza}{projects} \\
 \end{tabular}
@@ -216,16 +219,19 @@ management purpose \\
 
 \section{Computer Skills}
 
-\begin{tabular}{rl}
+\begin{longtable}{rl}
 Languages: & Python, C, C++, bash, javascript, PHP, 
-Java, html/css, {\fb \LaTeX} \\
+Java, html/css, {\fb \LaTeX}
+\footnote{This Document was generated using {\fb \LaTeX} and is 
+available as a Free Software  
+\href{http://github.com/pantuza/vitex}{project} hosted at Github.} \\
 Databases: & MySQL, PostgreSQL, MongoDB, Redis \\
 Operating System: & OpenSUSE, CentOS, Ubuntu, Fedora, Arch Linux \\
-Services: & nginx, Apache, Tornado, memcached, Lucene Solr, 
-git, squid, bind9, uWSGI, Cron \\
+Services: & nginx, Apache, Tornado, memcached, Lucene Solr, git, squid, 
+\\ & bind9, uWSGI, Cron \\
 Networking tools: & nmap, tcpdump, iptraf, iperf \\
 Development tools: & vim, gdb, valgrind, ipdb, nose, pylint, POSIX tools \\
-\end{tabular}
+\end{longtable}
 
 
 
