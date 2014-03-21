@@ -12,8 +12,14 @@ fontfile := fontin.zip
 fontin := /usr/share/fonts/fontin
 
 
+all: $(EN_FILE).tex $(PT_FILE).tex
+	$(TEX) $(EN_FILE).tex
+	$(TEX) $(PT_FILE).tex
+
+
 latex: en
-	
+
+
 en: $(EN_FILE).tex
 	@echo -e "Compiling English CV..."
 	$(TEX) $(EN_FILE).tex
@@ -38,4 +44,3 @@ font: $(fontfile)
 
 clean:
 	rm *.log *.aux *.out *.pdf
-
