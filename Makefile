@@ -28,9 +28,6 @@ all: $(EN_FILE).tex $(PT_FILE).tex
 	$(TEX) $(PT_FILE).tex
 
 
-latex: en
-
-
 en: $(EN_FILE).tex
 	@echo -e "Compiling English CV..."
 	$(TEX) $(EN_FILE).tex
