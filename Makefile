@@ -31,13 +31,11 @@ all: $(EN_FILE).tex $(PT_FILE).tex
 en: $(EN_FILE).tex
 	@echo -e "Compiling English CV..."
 	$(TEX) $(EN_FILE).tex
-	evince $(EN_FILE).pdf
 
 
 pt: $(PT_FILE).tex
 	@echo -e "Compiling Portuguese (BR) CV..."
 	$(TEX) $(PT_FILE).tex
-	evince $(PT_FILE).pdf
 
 
 font: $(fontfile)
