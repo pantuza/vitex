@@ -11,6 +11,8 @@ TEX := xelatex
 fontfile := fontin.zip
 fontin := /usr/share/fonts/fontin
 
+OUT_NAME := gustavo-pantuza
+
 
 help:
 	@echo "ViTeX target rules"
@@ -23,19 +25,17 @@ help:
 	@echo "help  - Prints this help message with possible target rules"
 
 
-all: $(EN_FILE).tex $(PT_FILE).tex
-	$(TEX) $(EN_FILE).tex
-	$(TEX) $(PT_FILE).tex
+all: en pt
 
 
 en: $(EN_FILE).tex
 	@echo -e "Compiling English CV..."
-	$(TEX) $(EN_FILE).tex
+	$(TEX) $(EN_FILE).tex && mv $(EN_FILE).pdf $(OUT_NAME)-en.pdf
 
 
 pt: $(PT_FILE).tex
 	@echo -e "Compiling Portuguese (BR) CV..."
-	$(TEX) $(PT_FILE).tex
+	$(TEX) $(PT_FILE).tex && mv $(PT_FILE).pdf $(OUT_NAME)-pt.pdf
 
 
 font: $(fontfile)
