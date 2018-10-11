@@ -50,6 +50,7 @@
 \usepackage{titlesec} % Used to customize the \section command
 
 \usepackage{longtable} % Used for footnotes inside tables
+\usepackage{makecell} % Allow to break lines inside one cell
 
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
@@ -279,6 +280,22 @@ Cloud tools: & KVM, Docker, LXC, Cloud Stack \\
 Development tools: & vim, git, gdb, valgrind, POSIX tools \\
 Computer Science: & Algorithms, Network, Distributed systems, Operating systems \\
 \end{longtable}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{longtable}{rl}
+    \href{https://ieeexplore.ieee.org/document/7014202}{CNSN 2014}: & \makecell[l]{Network Management through Graphs in Software Defined Networks} \\
+\href{http://www.sbrc2014.ufsc.br/anais/files/wpeif/anaisWPEIF2014.pdf}{SBRC 2014}: & \makecell[l]{[pt-BR] Análise e Gerenciamento de Rede através de Grafos \\
+    em Redes Definidas por Software} \\
+\href{https://www.dcc.ufmg.br/pos/cursos/defesas/1824M.PDF}{Master thesis}: & \makecell[l]{[pt-BR] Graphs as a primitive of the control plane to network analisys \\
+    and management through Software Defined Networking} \\
+\end{longtable}
+
 
 
 
