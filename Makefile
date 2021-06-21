@@ -13,16 +13,21 @@ fontin := /usr/share/fonts/fontin
 
 OUT_NAME := gustavo-pantuza
 
+DOCKER_CMD := docker run -it --rm -v $(PWD):/doc vitex:latest
 
 help:
 	@echo "ViTeX target rules"
 	@echo
-	@echo "all   - Compiles english and portuguese PDF files"
-	@echo "en    - Only compiles the english version"
-	@echo "pt    - Only compiles the portuguese version"
-	@echo "font  - Installs the font file into a linux box"
-	@echo "clean - Cleans up the project"
-	@echo "help  - Prints this help message with possible target rules"
+	@echo "all          - Compiles english and portuguese PDF files"
+	@echo "en           - Only compiles the english version"
+	@echo "pt           - Only compiles the portuguese version"
+	@echo "font         - Installs the font file into a linux box"
+	@echo "docker_build - Build docker image"
+	@echo "docker_all   - Compilies all cv files using docker"
+	@echo "docker_en    - Compilies english cv file using docker"
+	@echo "docker_pt    - Compilies portuguese cv file using docker"
+	@echo "clean        - Cleans up the project"
+	@echo "help         - Prints this help message with possible target rules"
 
 
 all: en pt
@@ -47,6 +52,17 @@ font: $(fontfile)
 	@echo -e "\n# Updating system font cache\n"
 	sudo fc-cache -fv
 
+docker_build: Dockerfile
+	@docker build --tag vitex:latest .
+
+docker_all:
+	$(DOCKER_CMD) make all
+
+docker_en:
+	$(DOCKER_CMD) make en
+
+docker_pt:
+	$(DOCKER_CMD) make pt
 
 clean:
 	rm *.log *.aux *.out *.pdf
