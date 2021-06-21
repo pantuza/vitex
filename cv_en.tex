@@ -52,6 +52,11 @@
 \usepackage{longtable} % Used for footnotes inside tables
 \usepackage{makecell} % Allow to break lines inside one cell
 
+\usepackage{floatrow} % Image and table side by side
+% Table float box with bottom caption, box width adjusted to content
+\newfloatcommand{capbtabbox}{table}[][\FBwidth]
+
+
 \titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
 \titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
 
@@ -72,13 +77,24 @@
 
 \section{Personal Data}
 
+\begin{figure}[ht]
+\begin{floatrow}
+
+\includegraphics[width=.2\textwidth]{thumb.jpg}
+
+\capbtabbox{%
 \begin{tabular}{rl}
 \textsc{Place and Date of Birth:} & Brazil | 12 October 1989 \\
 \textsc{Address:} & Belo Horizonte - MG, Brazil \\
 \textsc{Phone:} & +55 31 9 8367 2657\\
-\textsc{email:} & \href{mailto:gustavopantuza@gmail.com}{gustavopantuza@gmail.com}
+\textsc{email:} & \href{mailto:gustavopantuza@gmail.com}{gustavopantuza@gmail.com} \\
+\textsc{Github:} & \href{https://github.com/pantuza}{https://github.com/pantuza} \\
+\textsc{Blog:} & \href{https://blog.pantuza.com}{https://blog.pantuza.com}
 \end{tabular}
+}
 
+\end{floatrow}
+\end{figure}
 
 
 
