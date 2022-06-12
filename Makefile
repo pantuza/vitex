@@ -64,5 +64,8 @@ docker_en:
 docker_pt:
 	$(DOCKER_CMD) make pt
 
+docker_shell:
+	$(DOCKER_CMD) sh
+
 clean:
 	rm *.log *.aux *.out *.pdf

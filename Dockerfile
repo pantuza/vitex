@@ -12,4 +12,3 @@ RUN mkdir -p /usr/share/fonts/fontin && \
     unzip fontin.zip && \
     rm fontin.zip && \
     fc-cache -fv
-
